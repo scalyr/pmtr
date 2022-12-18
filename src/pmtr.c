@@ -294,7 +294,7 @@ void rescan_config(void) {
   job_t *job, *old;
   int c;
 
-  syslog(LOG_INFO,"rescanning job configuration");
+//  syslog(LOG_INFO,"rescanning job configuration");
   UT_string *em; utstring_new(em);
   UT_array *previous_jobs = cfg.jobs;
   UT_array *new_jobs; utarray_new(new_jobs, &job_mm); cfg.jobs = new_jobs;

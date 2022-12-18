@@ -849,7 +849,7 @@ int instantiate_cfg_file(pmtr_t *cfg) {
   if (sr == 0) { rc = 0; goto done; } /* yes, done */
 
   /* try to create it */
-  syslog(LOG_INFO,"creating empty %s", cfg->file);
+  //syslog(LOG_INFO,"creating empty %s", cfg->file);
   cs = open(cfg->file, O_WRONLY|O_CREAT|O_EXCL, 0600);
   if (cs < 0) {
     syslog(LOG_ERR,"can't create %s: %s", cfg->file, strerror(errno));
